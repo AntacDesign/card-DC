@@ -9,7 +9,15 @@ import '@fontsource-variable/sora';
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{title}</title>
   </head>
-  <body>
+  <body class="bg-card-200">
       <slot /> <!-- your content is injected here -->
   </body>
 </html>
+
+<style is:global>
+	:root {
+	}
+	html {
+		font-family: "Sora Variable", sans-serif;
+	}
+</style>

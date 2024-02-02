@@ -1,9 +1,11 @@
 ---
-import Layout from "../layouts/Layout.astro"
+import Layout from "../layouts/Layout.astro";
+import info from "../../public/cards.json"
+import UICard from '../components/UICard.astro';
 ---
-
 <Layout title="Card">
-	<article class="container m-auto">
-		<h1 class="text-chip-100">Hola mundo</h1>
-	</article>
+	<section class="container flex justify-center pt-[10.25rem]">
+		{info.map(({title,description,author})=>(
+		<UICard {title} {description} {author}/>))}
+	</section>
 </Layout>

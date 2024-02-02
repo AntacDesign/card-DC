@@ -1,0 +1,21 @@
+---
+interface Props {
+	title: string;
+	description: string;
+	author: string;
+}
+
+const { title, description, author } = Astro.props;
+---
+
+<article class="bg-card-100 rounded-lg shadow-lg shadow-slate-200 w-[21rem] p-4 flex flex-col">
+    <img src="/cactus_img.jpg"></img>
+        <h1>
+            {title}
+        </h1>
+    <p>{description}</p>
+    <p>{author}</p>
+</article>
+<style>
+    
+</style>
