@@ -1,0 +1,15 @@
+---
+const { title } = Astro.props;
+// Supports weights 100-800
+import '@fontsource-variable/sora';
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{title}</title>
+  </head>
+  <body>
+      <slot /> <!-- your content is injected here -->
+  </body>
+</html>
