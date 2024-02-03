@@ -4,7 +4,7 @@ import info from "../../public/cards.json"
 import UICard from '../components/UICard.astro';
 ---
 <Layout title="Card">
-	<section class="container flex justify-center pt-[10.25rem]">
+	<section class="container flex justify-center pt-[10.25rem] m-auto">
 		{info.map(({title,description,author})=>(
 		<UICard {title} {description} {author}/>))}
 	</section>
